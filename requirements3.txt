@@ -1,0 +1,16 @@
+bitsandbytes==0.41.1
+datasets==2.14.6
+einops==0.7.0
+numpy==1.24.4
+optimum==1.14.0
+pandas==2.0.3
+peft @ git+https://github.com/huggingface/peft.git@ed4ce9fc94662a4825ef869c98e6de8c16d8ef28
+safetensors==0.4.0
+scipy==1.10.1
+tokenizers==0.14.1
+torch==2.0.1
+torchaudio==2.0.2
+torchvision==0.15.2
+tqdm==4.66.1
+transformers==4.35.0
+trl==0.7.2
