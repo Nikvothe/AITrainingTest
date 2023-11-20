@@ -32,9 +32,9 @@ old_model = AutoModelForCausalLM.from_pretrained(
     # trust_remote_code=True
 )
 
-model = BetterTransformer.transform(old_model)
+# model = BetterTransformer.transform(old_model)
 
-model.requires_grad_(True)
+# model.requires_grad_(True)
 
 
 # model.config.use_cache = False
@@ -101,7 +101,7 @@ training_arguments = TrainingArguments(
 max_seq_length = 512
 
 trainer = SFTTrainer(
-    model=model,
+    model=old_model,
     train_dataset=dataset,
     peft_config=peft_config,
     dataset_text_field="text",
