@@ -68,7 +68,8 @@ peft_config = LoraConfig(
 # Training arguments
 
 output_dir = "./results"
-per_device_train_batch_size = 4
+per_device_train_batch_size = 1
+print("batch size to 1")
 gradient_accumulation_steps = 4
 optim = "paged_adamw_32bit"
 save_steps = 200 #We only want one copy of the model
